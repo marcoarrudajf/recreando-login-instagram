@@ -1,0 +1,209 @@
+
+
+/*Nesta parte está imagem celular mais o carrocel.*/
+/*In this part there is cell image plus the carousel.*/
+.container{
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 80vh;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imgPrinc{
+    align-items: center;
+    margin-left: 50px;
+    justify-content: flex-end;
+    position: relative;
+    display: flex;
+}
+
+.imgPrinc img{
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.carrosselImgs{
+    position: absolute;
+    display: flex;
+    border: 5px solid #000;
+    background-color: #000;
+    gap: 10px;
+    max-width: 250px;
+    max-height: 450px;
+    margin-top: 10px;
+    margin-right: 23px;
+    overflow: hidden;
+}
+
+.carrosselImgs input{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carrosselImgs img{
+    min-width: 250px;
+    min-height: 450px;
+    position: relative;
+    width: 10%;
+}
+
+#car1:checked ~ .first {
+    margin-left: 0;
+}
+
+#car2:checked ~ .first {
+    margin-left: -104%; 
+}
+
+#car3:checked ~ .first {
+    margin-left: -208%;    
+}
+#car4:checked ~ .first {
+    margin-left: -312%;
+}
+
+#car5:checked ~ .first {
+    margin-left: -416%;
+}
+
+/*Aqui é o campo do login.*/
+/*Here is the login field.*/
+
+.containerLogin{
+    display: block;
+    position: relative;
+    min-width: 350px;
+    max-width: 300px;
+    margin-right: 120px;
+    margin-left: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+#logo{
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+    margin-bottom: 20px;
+}
+#imgPerfil{
+    width: 25%;
+    border-radius: 50%;  
+}
+.btnLogin{
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    
+}
+.btnLogin button{
+    position: relative;
+    width: 75%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #39f;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px;
+}
+.containerLogin p{
+    color: #36f;
+    font-size: 1em;
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+.containerLogin a{
+    color: #36f;
+    font-size: 1em;
+    margin: 0;
+    padding: 15px 0 15px 0;
+}
+/*Área do rotapé, links, informações de direitos autorais e seleção do idioma.*/
+/*Footer area, links, copyright information and language selection.*/
+.containerFooter p{
+    display: inline-block;
+    color: #555;
+    padding: 20px 5px;
+    font-size: 1.1em;
+}
+.containerFooter a{
+    display: inline-block;
+    color: #39f;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.linkFooter {
+    max-width: 700px;
+    padding: 0 40px;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;   
+}
+.linkFooter a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 10px 10px 0 10px;  
+    color: #a3a3a3;
+}
+#idioma select{
+    margin: 10px 10px 10px 0;
+    background-color: transparent;
+    border: none;
+    color: #a3a3a3;
+}
+@media (max-width: 900px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: block;
+        margin-bottom: 0;
+        max-height: 450px; 
+    }
+
+    .imgPrinc {
+        display: none;
+    }
+
+    .containerLogin {
+        margin: 150px auto;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+
+    .linkFooter {
+        max-width: 700px;
+        padding: 0 40px;
+        margin: 0 auto; 
+        align-items: center; 
+        justify-content: center;
+        text-decoration: none;   
+    }
+
+    .linkFooter a{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 10px 10px 0 10px;  
+        color: #a3a3a3;
+    }
+}
+
